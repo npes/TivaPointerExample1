@@ -23,12 +23,12 @@ Modified by NISI 11.10.2017 to demonstrate basic usage of pointers
 void Output_Init(void);
 
 int main(void){ 
-	Output_Init();              // initialize output device
+	Output_Init();        // initialize output device
 
-	uint16_t var	= 625;		//variable declaration - R value is 625
+	uint16_t var	= 625;	//variable declaration - R value is 625
 	uint16_t *ip;					//pointer variable declaration
 	
-	ip = &var;								//store address of var in pointer variable
+	ip = &var;						//store address of var in pointer variable
 
   printf("Address of var1 variable: %#x\n", &var); //Address of var variable						
 	printf("Value stored in ip variable: %#x\n", ip); //address stored in pointer variable	
@@ -38,6 +38,6 @@ int main(void){
 	
 	printf("New value of var is: %d\n", var);
 	
-		return 0;
+	return 0;
 }
 
